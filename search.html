@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Recherche de Produits</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="list.html">Liste</a></li>
+            <li><a href="add.html">Ajouter</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="search-container card">
+            <h1>Recherche de Produits</h1>
+            <div class="search-controls">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Rechercher un produit...">
+                </div>
+                <div class="filter-group">
+                    <select id="categoryFilter">
+                        <option value="">Toutes les catégories</option>
+                    </select>
+                    <select id="stockFilter">
+                        <option value="">Tout le stock</option>
+                        <option value="low">Stock bas (≤ 5)</option>
+                        <option value="medium">Stock moyen (6-20)</option>
+                        <option value="high">Stock élevé (> 20)</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="results-container">
+                <table id="searchResults">
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Description</th>
+                            <th>Prix</th>
+                            <th>Stock</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsBody"></tbody>
+                </table>
+                <div id="noResults" class="no-results" style="display: none;">
+                    Aucun résultat trouvé
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="search.js"></script>
+</body>
+</html>
