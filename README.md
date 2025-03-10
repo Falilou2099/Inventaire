@@ -30,7 +30,7 @@ Ce projet est une application de gestion d’inventaire développée en **PHP & 
 
 ### 1️⃣ Cloner le projet  
 ```bash
-git clone https://github.com/ton-utilisateur/nom-du-repo.git
+git clone https://github.com/Falilou2099/Inventaire.git
 cd nom-du-repo
 ```
 
